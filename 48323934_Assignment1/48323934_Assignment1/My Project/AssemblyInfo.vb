@@ -10,9 +10,9 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("My Hotel Reservations")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyTitle("Blue Marlin Hotel")> 
+<Assembly: AssemblyDescription("The Blue Marlin Hotel is situated on KwaZulu-Natal’s popular South Coast, just 40 minutes south of Durban.  Nestled in sub-tropical gardens, with a sparkling pool, and ocean views to take your breath away, the Blue Marlin is one of those excellent, family oriented hotels where guests intermingle and return year after year.")> 
+<Assembly: AssemblyCompany("Blue Marlin Hotel")> 
 <Assembly: AssemblyProduct("")> 
 <Assembly: AssemblyCopyright("SJ Fouche, Student no: 48323934")> 
 <Assembly: AssemblyTrademark("")> 
