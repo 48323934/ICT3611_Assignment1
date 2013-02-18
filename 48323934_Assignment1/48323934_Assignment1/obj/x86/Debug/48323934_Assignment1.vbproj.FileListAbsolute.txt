@@ -1,0 +1,11 @@
+C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\bin\Debug\48323934_Assignment1.exe
+C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\bin\Debug\48323934_Assignment1.pdb
+C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\bin\Debug\48323934_Assignment1.xml
+C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\obj\x86\Debug\_48323934_Assignment1.Resources.resources
+C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\obj\x86\Debug\_48323934_Assignment1.SplashScreen1.resources
+C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\obj\x86\Debug\48323934_Assignment1.exe
+C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\obj\x86\Debug\48323934_Assignment1.xml
+C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\obj\x86\Debug\48323934_Assignment1.pdb
