@@ -17,10 +17,19 @@
         Me.LabelCopyright.Text = My.Application.Info.Copyright
         Me.LabelCompanyName.Text = My.Application.Info.CompanyName
         Me.TextBoxDescription.Text = My.Application.Info.Description
+
+        ' I have added this feature to update where you are in the statusbar.
+        HomeScreen.ToolStripStatusLabel1.Text = "About Blue Marlin Hotel"
+
     End Sub
 
     Private Sub OKButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OKButton.Click
+        ' Close about
         Me.Close()
+        ' I added this to change the status back to the welcome screen when returning from other windows
+        ' I could of as per all the other windows alternatively placed this code in a lost focus just to show it works this way as well
+        HomeScreen.ToolStripStatusLabel1.Text = "Welcome to Blue Marlin Hotel System"
+
     End Sub
 
 End Class
