@@ -29,10 +29,10 @@ Partial Class SplashScreen1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashScreen1))
         Me.MainLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.DetailsLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
+        Me.Version = New System.Windows.Forms.Label()
         Me.Copyright = New System.Windows.Forms.Label()
         Me.ApplicationTitle = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Version = New System.Windows.Forms.Label()
         Me.MainLayoutPanel.SuspendLayout()
         Me.DetailsLayoutPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,6 +72,17 @@ Partial Class SplashScreen1
         Me.DetailsLayoutPanel.Size = New System.Drawing.Size(247, 79)
         Me.DetailsLayoutPanel.TabIndex = 1
         '
+        'Version
+        '
+        Me.Version.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Version.BackColor = System.Drawing.Color.Transparent
+        Me.Version.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Version.Location = New System.Drawing.Point(3, 9)
+        Me.Version.Name = "Version"
+        Me.Version.Size = New System.Drawing.Size(241, 20)
+        Me.Version.TabIndex = 1
+        Me.Version.Text = "Version {0}.{1:00}"
+        '
         'Copyright
         '
         Me.Copyright.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -105,17 +116,6 @@ Partial Class SplashScreen1
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
-        'Version
-        '
-        Me.Version.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Version.BackColor = System.Drawing.Color.Transparent
-        Me.Version.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Version.Location = New System.Drawing.Point(3, 9)
-        Me.Version.Name = "Version"
-        Me.Version.Size = New System.Drawing.Size(241, 20)
-        Me.Version.TabIndex = 1
-        Me.Version.Text = "Version {0}.{1:00}"
-        '
         'SplashScreen1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -129,6 +129,7 @@ Partial Class SplashScreen1
         Me.Name = "SplashScreen1"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.TopMost = True
         Me.MainLayoutPanel.ResumeLayout(False)
         Me.DetailsLayoutPanel.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

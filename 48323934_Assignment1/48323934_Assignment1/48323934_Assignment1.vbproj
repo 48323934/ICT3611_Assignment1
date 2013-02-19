@@ -79,11 +79,35 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Form1.vb">
+    <Compile Include="CheckIn.Designer.vb">
+      <DependentUpon>CheckIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckIn.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="CheckOut.Designer.vb">
+      <DependentUpon>CheckOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoNeed.Designer.vb">
+      <DependentUpon>NoNeed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NoNeed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservation.Designer.vb">
+      <DependentUpon>Reservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeScreen.Designer.vb">
+      <DependentUpon>HomeScreen.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -112,14 +136,26 @@
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="CheckIn.resx">
+      <DependentUpon>CheckIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoNeed.resx">
+      <DependentUpon>NoNeed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeScreen.resx">
+      <DependentUpon>HomeScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservation.resx">
+      <DependentUpon>Reservation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen1.resx">
       <DependentUpon>SplashScreen1.vb</DependentUpon>

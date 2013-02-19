@@ -34,11 +34,11 @@ Partial Class AboutBox1
         Me.TableLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         Me.LabelProductName = New System.Windows.Forms.Label()
+        Me.LabelVersion = New System.Windows.Forms.Label()
         Me.LabelCopyright = New System.Windows.Forms.Label()
         Me.LabelCompanyName = New System.Windows.Forms.Label()
         Me.TextBoxDescription = New System.Windows.Forms.TextBox()
         Me.OKButton = New System.Windows.Forms.Button()
-        Me.LabelVersion = New System.Windows.Forms.Label()
         Me.TableLayoutPanel.SuspendLayout()
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -92,6 +92,18 @@ Partial Class AboutBox1
         Me.LabelProductName.Text = "Product Name"
         Me.LabelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'LabelVersion
+        '
+        Me.LabelVersion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LabelVersion.Location = New System.Drawing.Point(136, 25)
+        Me.LabelVersion.Margin = New System.Windows.Forms.Padding(6, 0, 3, 0)
+        Me.LabelVersion.MaximumSize = New System.Drawing.Size(0, 17)
+        Me.LabelVersion.Name = "LabelVersion"
+        Me.LabelVersion.Size = New System.Drawing.Size(257, 17)
+        Me.LabelVersion.TabIndex = 0
+        Me.LabelVersion.Text = "Version"
+        Me.LabelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'LabelCopyright
         '
         Me.LabelCopyright.Dock = System.Windows.Forms.DockStyle.Fill
@@ -139,18 +151,6 @@ Partial Class AboutBox1
         Me.OKButton.Size = New System.Drawing.Size(75, 23)
         Me.OKButton.TabIndex = 0
         Me.OKButton.Text = "&OK"
-        '
-        'LabelVersion
-        '
-        Me.LabelVersion.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LabelVersion.Location = New System.Drawing.Point(136, 25)
-        Me.LabelVersion.Margin = New System.Windows.Forms.Padding(6, 0, 3, 0)
-        Me.LabelVersion.MaximumSize = New System.Drawing.Size(0, 17)
-        Me.LabelVersion.Name = "LabelVersion"
-        Me.LabelVersion.Size = New System.Drawing.Size(257, 17)
-        Me.LabelVersion.TabIndex = 0
-        Me.LabelVersion.Text = "Version"
-        Me.LabelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'AboutBox1
         '
