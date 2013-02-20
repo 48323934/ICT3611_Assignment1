@@ -1,6 +1,22 @@
-﻿Public Class HomeScreen
+﻿Module GlobalVar
+    ' My Global variables
+    ' I have set a two dimensional array to access the room number, how many it sleeps and price per room
+    ' I have on purpose displayed the array as below to easier grasp the row and column concept
+    ' Still playing and testing with this
+    Public Rooms(,) As Integer = {{1, 220},
+                                  {2, 400},
+                                  {3, 580},
+                                  {4, 750},
+                                  {5, 1000}}
+
+End Module
+
+Public Class HomeScreen
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Show()
+        Me.Activate()
+
         ' I have added this feature to update where you are in the statusbar.
         Me.ToolStripStatusLabel1.Text = "Welcome to Blue Marlin Hotel System"
 

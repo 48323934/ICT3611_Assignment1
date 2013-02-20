@@ -49,6 +49,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -89,6 +90,12 @@
       <DependentUpon>CheckOut.vb</DependentUpon>
     </Compile>
     <Compile Include="CheckOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roomBookings.Designer.vb">
+      <DependentUpon>roomBookings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="roomBookings.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NoNeed.Designer.vb">
@@ -141,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CheckOut.resx">
       <DependentUpon>CheckOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roomBookings.resx">
+      <DependentUpon>roomBookings.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NoNeed.resx">
       <DependentUpon>NoNeed.vb</DependentUpon>

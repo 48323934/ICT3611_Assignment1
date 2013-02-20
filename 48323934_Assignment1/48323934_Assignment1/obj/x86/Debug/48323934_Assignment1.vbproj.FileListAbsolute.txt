@@ -15,3 +15,4 @@ C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\obj\x86\Debug\_4
 C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\obj\x86\Debug\_48323934_Assignment1.CheckIn.resources
 C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\obj\x86\Debug\_48323934_Assignment1.CheckOut.resources
 C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\obj\x86\Debug\_48323934_Assignment1.NoNeed.resources
+C:\Vb10sbs\gitproject\48323934_Assignment1\48323934_Assignment1\obj\x86\Debug\_48323934_Assignment1.roomBookings.resources
