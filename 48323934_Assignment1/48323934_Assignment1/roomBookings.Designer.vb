@@ -39,65 +39,61 @@ Partial Class roomBookings
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
         '
         Me.Button1.AutoSize = True
-        Me.Button1.Location = New System.Drawing.Point(40, 60)
+        Me.Button1.Location = New System.Drawing.Point(39, 103)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(66, 25)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Room 101"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
         Me.Button2.AutoSize = True
-        Me.Button2.Location = New System.Drawing.Point(40, 105)
+        Me.Button2.Location = New System.Drawing.Point(39, 148)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(66, 25)
         Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Room 102"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
         Me.Button3.AutoSize = True
-        Me.Button3.Location = New System.Drawing.Point(40, 155)
+        Me.Button3.Location = New System.Drawing.Point(39, 198)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(66, 25)
         Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Room 103"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
         Me.Button4.AutoSize = True
-        Me.Button4.Location = New System.Drawing.Point(40, 200)
+        Me.Button4.Location = New System.Drawing.Point(39, 243)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(66, 25)
         Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Room 104"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
         Me.Button5.AutoSize = True
-        Me.Button5.Location = New System.Drawing.Point(40, 245)
+        Me.Button5.Location = New System.Drawing.Point(39, 288)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(66, 25)
         Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Room 105"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(136, 26)
+        Me.Label1.Location = New System.Drawing.Point(135, 69)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 16)
+        Me.Label1.Size = New System.Drawing.Size(57, 16)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Sleeps"
         '
@@ -105,15 +101,15 @@ Partial Class roomBookings
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(210, 26)
+        Me.Label2.Location = New System.Drawing.Point(209, 69)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(89, 16)
+        Me.Label2.Size = New System.Drawing.Size(86, 16)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Room Rate"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(133, 63)
+        Me.TextBox1.Location = New System.Drawing.Point(132, 106)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(66, 20)
@@ -122,7 +118,7 @@ Partial Class roomBookings
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(133, 108)
+        Me.TextBox2.Location = New System.Drawing.Point(132, 151)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(66, 20)
@@ -131,7 +127,7 @@ Partial Class roomBookings
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(133, 158)
+        Me.TextBox3.Location = New System.Drawing.Point(132, 201)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(66, 20)
@@ -140,7 +136,7 @@ Partial Class roomBookings
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(133, 203)
+        Me.TextBox4.Location = New System.Drawing.Point(132, 246)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(66, 20)
@@ -149,7 +145,7 @@ Partial Class roomBookings
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(133, 248)
+        Me.TextBox5.Location = New System.Drawing.Point(132, 291)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(66, 20)
@@ -158,7 +154,7 @@ Partial Class roomBookings
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(221, 63)
+        Me.TextBox6.Location = New System.Drawing.Point(220, 106)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(66, 20)
@@ -167,7 +163,7 @@ Partial Class roomBookings
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(221, 108)
+        Me.TextBox7.Location = New System.Drawing.Point(220, 151)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.ReadOnly = True
         Me.TextBox7.Size = New System.Drawing.Size(66, 20)
@@ -176,7 +172,7 @@ Partial Class roomBookings
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(221, 158)
+        Me.TextBox8.Location = New System.Drawing.Point(220, 201)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(66, 20)
@@ -185,7 +181,7 @@ Partial Class roomBookings
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(221, 203)
+        Me.TextBox9.Location = New System.Drawing.Point(220, 246)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.ReadOnly = True
         Me.TextBox9.Size = New System.Drawing.Size(66, 20)
@@ -194,19 +190,30 @@ Partial Class roomBookings
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(221, 248)
+        Me.TextBox10.Location = New System.Drawing.Point(220, 291)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.ReadOnly = True
         Me.TextBox10.Size = New System.Drawing.Size(66, 20)
         Me.TextBox10.TabIndex = 16
         Me.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(84, 26)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(166, 24)
+        Me.Label3.TabIndex = 17
+        Me.Label3.Text = "Available Rooms"
+        '
         'roomBookings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(339, 296)
+        Me.ClientSize = New System.Drawing.Size(335, 343)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox10)
         Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.TextBox8)
@@ -252,4 +259,5 @@ Partial Class roomBookings
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

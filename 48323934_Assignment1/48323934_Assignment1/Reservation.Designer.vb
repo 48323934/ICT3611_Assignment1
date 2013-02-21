@@ -37,28 +37,31 @@ Partial Class Reservation
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Transaction = New System.Windows.Forms.Label()
+        Me.labelTransaction = New System.Windows.Forms.Label()
         Me.transactionNo = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
-        Me.guestName = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.MaskedTextBoxContact = New System.Windows.Forms.MaskedTextBox()
+        Me.textBoxGuestName = New System.Windows.Forms.TextBox()
+        Me.TextBoxAdults = New System.Windows.Forms.TextBox()
+        Me.TextBoxSubTotal = New System.Windows.Forms.TextBox()
+        Me.TextBoxChildren = New System.Windows.Forms.TextBox()
         Me.roomNumber = New System.Windows.Forms.TextBox()
         Me.periodTextBox = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBoxDeposit = New System.Windows.Forms.TextBox()
+        Me.TextBoxBalance = New System.Windows.Forms.TextBox()
         Me.checkInDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.checkOutDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.roomRate = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.ButtonMinusAdult = New System.Windows.Forms.Button()
+        Me.ButtonMinusChild = New System.Windows.Forms.Button()
+        Me.ButtonPlusAdult = New System.Windows.Forms.Button()
+        Me.ButtonPlusChild = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.sleeps = New System.Windows.Forms.TextBox()
+        Me.ButtonSubmitReserve = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -85,10 +88,10 @@ Partial Class Reservation
         'LineShape2
         '
         Me.LineShape2.Name = "LineShape2"
-        Me.LineShape2.X1 = 35
-        Me.LineShape2.X2 = 555
-        Me.LineShape2.Y1 = 380
-        Me.LineShape2.Y2 = 380
+        Me.LineShape2.X1 = 34
+        Me.LineShape2.X2 = 554
+        Me.LineShape2.Y1 = 374
+        Me.LineShape2.Y2 = 374
         '
         'LineShape1
         '
@@ -132,7 +135,7 @@ Partial Class Reservation
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(30, 180)
+        Me.Label4.Location = New System.Drawing.Point(30, 230)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(86, 16)
         Me.Label4.TabIndex = 8
@@ -142,7 +145,7 @@ Partial Class Reservation
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(300, 180)
+        Me.Label5.Location = New System.Drawing.Point(300, 230)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(98, 16)
         Me.Label5.TabIndex = 12
@@ -152,7 +155,7 @@ Partial Class Reservation
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(30, 230)
+        Me.Label6.Location = New System.Drawing.Point(30, 180)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(99, 16)
         Me.Label6.TabIndex = 16
@@ -192,27 +195,27 @@ Partial Class Reservation
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(30, 520)
+        Me.Label10.Location = New System.Drawing.Point(30, 490)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(89, 16)
         Me.Label10.TabIndex = 31
         Me.Label10.Text = "Balance Due:"
         '
-        'Transaction
+        'labelTransaction
         '
-        Me.Transaction.AutoSize = True
-        Me.Transaction.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Transaction.Location = New System.Drawing.Point(150, 80)
-        Me.Transaction.Name = "Transaction"
-        Me.Transaction.Size = New System.Drawing.Size(79, 16)
-        Me.Transaction.TabIndex = 3
-        Me.Transaction.Text = "Transaction"
+        Me.labelTransaction.AutoSize = True
+        Me.labelTransaction.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelTransaction.Location = New System.Drawing.Point(150, 80)
+        Me.labelTransaction.Name = "labelTransaction"
+        Me.labelTransaction.Size = New System.Drawing.Size(79, 16)
+        Me.labelTransaction.TabIndex = 3
+        Me.labelTransaction.Text = "Transaction"
         '
         'transactionNo
         '
         Me.transactionNo.AutoSize = True
         Me.transactionNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.transactionNo.Location = New System.Drawing.Point(30, 420)
+        Me.transactionNo.Location = New System.Drawing.Point(30, 390)
         Me.transactionNo.Name = "transactionNo"
         Me.transactionNo.Size = New System.Drawing.Size(69, 16)
         Me.transactionNo.TabIndex = 27
@@ -222,7 +225,7 @@ Partial Class Reservation
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(30, 470)
+        Me.Label12.Location = New System.Drawing.Point(30, 440)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(86, 16)
         Me.Label12.TabIndex = 29
@@ -231,61 +234,61 @@ Partial Class Reservation
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(330, 395)
+        Me.PictureBox1.Location = New System.Drawing.Point(337, 392)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(213, 163)
         Me.PictureBox1.TabIndex = 15
         Me.PictureBox1.TabStop = False
         '
-        'MaskedTextBox1
+        'MaskedTextBoxContact
         '
-        Me.MaskedTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(430, 127)
-        Me.MaskedTextBox1.Mask = "000-000-0000"
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(120, 22)
-        Me.MaskedTextBox1.TabIndex = 7
-        Me.MaskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.MaskedTextBoxContact.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MaskedTextBoxContact.Location = New System.Drawing.Point(430, 127)
+        Me.MaskedTextBoxContact.Mask = "000-000-0000"
+        Me.MaskedTextBoxContact.Name = "MaskedTextBoxContact"
+        Me.MaskedTextBoxContact.Size = New System.Drawing.Size(120, 22)
+        Me.MaskedTextBoxContact.TabIndex = 7
+        Me.MaskedTextBoxContact.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'guestName
+        'textBoxGuestName
         '
-        Me.guestName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.guestName.Location = New System.Drawing.Point(150, 127)
-        Me.guestName.Name = "guestName"
-        Me.guestName.Size = New System.Drawing.Size(145, 22)
-        Me.guestName.TabIndex = 5
+        Me.textBoxGuestName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.textBoxGuestName.Location = New System.Drawing.Point(150, 127)
+        Me.textBoxGuestName.Name = "textBoxGuestName"
+        Me.textBoxGuestName.Size = New System.Drawing.Size(145, 22)
+        Me.textBoxGuestName.TabIndex = 5
         '
-        'TextBox2
+        'TextBoxAdults
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(150, 174)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(35, 22)
-        Me.TextBox2.TabIndex = 9
+        Me.TextBoxAdults.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxAdults.Location = New System.Drawing.Point(150, 227)
+        Me.TextBoxAdults.Name = "TextBoxAdults"
+        Me.TextBoxAdults.ReadOnly = True
+        Me.TextBoxAdults.Size = New System.Drawing.Size(35, 22)
+        Me.TextBoxAdults.TabIndex = 9
         '
-        'TextBox3
+        'TextBoxSubTotal
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(150, 420)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(79, 22)
-        Me.TextBox3.TabIndex = 28
+        Me.TextBoxSubTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxSubTotal.Location = New System.Drawing.Point(150, 387)
+        Me.TextBoxSubTotal.Name = "TextBoxSubTotal"
+        Me.TextBoxSubTotal.ReadOnly = True
+        Me.TextBoxSubTotal.Size = New System.Drawing.Size(79, 22)
+        Me.TextBoxSubTotal.TabIndex = 28
         '
-        'TextBox4
+        'TextBoxChildren
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(430, 174)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(35, 22)
-        Me.TextBox4.TabIndex = 13
+        Me.TextBoxChildren.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxChildren.Location = New System.Drawing.Point(430, 227)
+        Me.TextBoxChildren.Name = "TextBoxChildren"
+        Me.TextBoxChildren.ReadOnly = True
+        Me.TextBoxChildren.Size = New System.Drawing.Size(35, 22)
+        Me.TextBoxChildren.TabIndex = 13
         '
         'roomNumber
         '
         Me.roomNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.roomNumber.Location = New System.Drawing.Point(150, 227)
+        Me.roomNumber.Location = New System.Drawing.Point(150, 174)
         Me.roomNumber.Name = "roomNumber"
         Me.roomNumber.ReadOnly = True
         Me.roomNumber.Size = New System.Drawing.Size(79, 22)
@@ -300,23 +303,23 @@ Partial Class Reservation
         Me.periodTextBox.Size = New System.Drawing.Size(35, 22)
         Me.periodTextBox.TabIndex = 26
         '
-        'TextBox7
+        'TextBoxDeposit
         '
-        Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(150, 467)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.ReadOnly = True
-        Me.TextBox7.Size = New System.Drawing.Size(79, 22)
-        Me.TextBox7.TabIndex = 30
+        Me.TextBoxDeposit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxDeposit.Location = New System.Drawing.Point(150, 437)
+        Me.TextBoxDeposit.Name = "TextBoxDeposit"
+        Me.TextBoxDeposit.ReadOnly = True
+        Me.TextBoxDeposit.Size = New System.Drawing.Size(79, 22)
+        Me.TextBoxDeposit.TabIndex = 30
         '
-        'TextBox8
+        'TextBoxBalance
         '
-        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(150, 517)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.ReadOnly = True
-        Me.TextBox8.Size = New System.Drawing.Size(79, 22)
-        Me.TextBox8.TabIndex = 32
+        Me.TextBoxBalance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxBalance.Location = New System.Drawing.Point(150, 487)
+        Me.TextBoxBalance.Name = "TextBoxBalance"
+        Me.TextBoxBalance.ReadOnly = True
+        Me.TextBoxBalance.Size = New System.Drawing.Size(79, 22)
+        Me.TextBoxBalance.TabIndex = 32
         '
         'checkInDateTimePicker
         '
@@ -337,7 +340,7 @@ Partial Class Reservation
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(300, 230)
+        Me.Label13.Location = New System.Drawing.Point(276, 180)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(77, 16)
         Me.Label13.TabIndex = 19
@@ -346,56 +349,85 @@ Partial Class Reservation
         'roomRate
         '
         Me.roomRate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.roomRate.Location = New System.Drawing.Point(430, 227)
+        Me.roomRate.Location = New System.Drawing.Point(364, 174)
         Me.roomRate.Name = "roomRate"
         Me.roomRate.ReadOnly = True
-        Me.roomRate.Size = New System.Drawing.Size(79, 22)
+        Me.roomRate.Size = New System.Drawing.Size(65, 22)
         Me.roomRate.TabIndex = 20
         '
-        'Button1
+        'ButtonMinusAdult
         '
-        Me.Button1.Location = New System.Drawing.Point(204, 174)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(25, 25)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "<"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonMinusAdult.Location = New System.Drawing.Point(204, 227)
+        Me.ButtonMinusAdult.Name = "ButtonMinusAdult"
+        Me.ButtonMinusAdult.Size = New System.Drawing.Size(25, 25)
+        Me.ButtonMinusAdult.TabIndex = 10
+        Me.ButtonMinusAdult.Text = "<"
+        Me.ButtonMinusAdult.UseVisualStyleBackColor = True
         '
-        'Button2
+        'ButtonMinusChild
         '
-        Me.Button2.Location = New System.Drawing.Point(484, 174)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(25, 25)
-        Me.Button2.TabIndex = 14
-        Me.Button2.Text = "<"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.ButtonMinusChild.Location = New System.Drawing.Point(484, 227)
+        Me.ButtonMinusChild.Name = "ButtonMinusChild"
+        Me.ButtonMinusChild.Size = New System.Drawing.Size(25, 25)
+        Me.ButtonMinusChild.TabIndex = 14
+        Me.ButtonMinusChild.Text = "<"
+        Me.ButtonMinusChild.UseVisualStyleBackColor = True
         '
-        'Button3
+        'ButtonPlusAdult
         '
-        Me.Button3.Location = New System.Drawing.Point(235, 174)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(25, 25)
-        Me.Button3.TabIndex = 11
-        Me.Button3.Text = ">"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.ButtonPlusAdult.Location = New System.Drawing.Point(235, 227)
+        Me.ButtonPlusAdult.Name = "ButtonPlusAdult"
+        Me.ButtonPlusAdult.Size = New System.Drawing.Size(25, 25)
+        Me.ButtonPlusAdult.TabIndex = 11
+        Me.ButtonPlusAdult.Text = ">"
+        Me.ButtonPlusAdult.UseVisualStyleBackColor = True
         '
-        'Button4
+        'ButtonPlusChild
         '
-        Me.Button4.Location = New System.Drawing.Point(515, 174)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(25, 25)
-        Me.Button4.TabIndex = 15
-        Me.Button4.Text = ">"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.ButtonPlusChild.Location = New System.Drawing.Point(515, 227)
+        Me.ButtonPlusChild.Name = "ButtonPlusChild"
+        Me.ButtonPlusChild.Size = New System.Drawing.Size(25, 25)
+        Me.ButtonPlusChild.TabIndex = 15
+        Me.ButtonPlusChild.Text = ">"
+        Me.ButtonPlusChild.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(235, 226)
+        Me.Button5.Location = New System.Drawing.Point(235, 174)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(25, 25)
         Me.Button5.TabIndex = 18
         Me.Button5.Text = "..."
         Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(450, 180)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(54, 16)
+        Me.Label14.TabIndex = 33
+        Me.Label14.Text = "Sleeps:"
+        '
+        'sleeps
+        '
+        Me.sleeps.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sleeps.Location = New System.Drawing.Point(515, 174)
+        Me.sleeps.Name = "sleeps"
+        Me.sleeps.ReadOnly = True
+        Me.sleeps.Size = New System.Drawing.Size(35, 22)
+        Me.sleeps.TabIndex = 34
+        '
+        'ButtonSubmitReserve
+        '
+        Me.ButtonSubmitReserve.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonSubmitReserve.Location = New System.Drawing.Point(70, 535)
+        Me.ButtonSubmitReserve.Name = "ButtonSubmitReserve"
+        Me.ButtonSubmitReserve.Size = New System.Drawing.Size(126, 23)
+        Me.ButtonSubmitReserve.TabIndex = 35
+        Me.ButtonSubmitReserve.Text = "Make Reservation"
+        Me.ButtonSubmitReserve.UseVisualStyleBackColor = True
         '
         'Reservation
         '
@@ -403,28 +435,31 @@ Partial Class Reservation
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(590, 568)
+        Me.Controls.Add(Me.ButtonSubmitReserve)
+        Me.Controls.Add(Me.sleeps)
+        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ButtonPlusChild)
+        Me.Controls.Add(Me.ButtonPlusAdult)
+        Me.Controls.Add(Me.ButtonMinusChild)
+        Me.Controls.Add(Me.ButtonMinusAdult)
         Me.Controls.Add(Me.roomRate)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.checkOutDateTimePicker)
         Me.Controls.Add(Me.checkInDateTimePicker)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.TextBoxBalance)
+        Me.Controls.Add(Me.TextBoxDeposit)
         Me.Controls.Add(Me.periodTextBox)
         Me.Controls.Add(Me.roomNumber)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.guestName)
-        Me.Controls.Add(Me.MaskedTextBox1)
+        Me.Controls.Add(Me.TextBoxChildren)
+        Me.Controls.Add(Me.TextBoxSubTotal)
+        Me.Controls.Add(Me.TextBoxAdults)
+        Me.Controls.Add(Me.textBoxGuestName)
+        Me.Controls.Add(Me.MaskedTextBoxContact)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.transactionNo)
-        Me.Controls.Add(Me.Transaction)
+        Me.Controls.Add(Me.labelTransaction)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -464,26 +499,29 @@ Partial Class Reservation
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents Transaction As System.Windows.Forms.Label
+    Friend WithEvents labelTransaction As System.Windows.Forms.Label
     Friend WithEvents transactionNo As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents MaskedTextBox1 As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents guestName As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents MaskedTextBoxContact As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents textBoxGuestName As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxAdults As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxSubTotal As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxChildren As System.Windows.Forms.TextBox
     Friend WithEvents roomNumber As System.Windows.Forms.TextBox
     Friend WithEvents periodTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxDeposit As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxBalance As System.Windows.Forms.TextBox
     Friend WithEvents checkInDateTimePicker As System.Windows.Forms.DateTimePicker
     Friend WithEvents checkOutDateTimePicker As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents roomRate As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents ButtonMinusAdult As System.Windows.Forms.Button
+    Friend WithEvents ButtonMinusChild As System.Windows.Forms.Button
+    Friend WithEvents ButtonPlusAdult As System.Windows.Forms.Button
+    Friend WithEvents ButtonPlusChild As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents sleeps As System.Windows.Forms.TextBox
+    Friend WithEvents ButtonSubmitReserve As System.Windows.Forms.Button
 End Class
