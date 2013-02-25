@@ -80,18 +80,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="CheckIn.Designer.vb">
-      <DependentUpon>CheckIn.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CheckIn.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CheckOut.Designer.vb">
-      <DependentUpon>CheckOut.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CheckOut.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="roomBookings.Designer.vb">
       <DependentUpon>roomBookings.vb</DependentUpon>
     </Compile>
@@ -142,12 +130,6 @@
   <ItemGroup>
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CheckIn.resx">
-      <DependentUpon>CheckIn.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CheckOut.resx">
-      <DependentUpon>CheckOut.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="roomBookings.resx">
       <DependentUpon>roomBookings.vb</DependentUpon>

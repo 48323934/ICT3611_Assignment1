@@ -42,15 +42,20 @@
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        ' This will open the roomBookings window
         roomBookings.ShowDialog()
 
     End Sub
 
     Private Sub ButtonPlusAdult_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonPlusAdult.Click
+        ' Buttons created to add to the adults total
+        ' The total is number in adults + the number in children
         Dim total As Integer
         total = Val(TextBoxAdults.Text) + Val(TextBoxChildren.Text)
+        ' First check if total above is equal to the number that the room can sleep and if it is do nothing
         If total = Val(sleeps.Text) Then
 
+            ' if it is not then add 1
         Else
             TextBoxAdults.Text = Val(TextBoxAdults.Text) + 1
         End If
@@ -58,6 +63,7 @@
     End Sub
 
     Private Sub ButtonPlusChild_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonPlusChild.Click
+        ' Explanation the same as above
         Dim total As Integer
         total = Val(TextBoxAdults.Text) + Val(TextBoxChildren.Text)
         If total = Val(sleeps.Text) Then
@@ -69,8 +75,10 @@
     End Sub
 
     Private Sub ButtonMinusAdult_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonMinusAdult.Click
+        ' if the adults box = 0 then it will remain 0 nothing else done as if you had to minus from 0 it would be a negative amount
         If Val(TextBoxAdults.Text) = 0 Then
             TextBoxAdults.Text = Val(TextBoxAdults.Text)
+            ' if it is not zero it could deduct without going into a negative amount
         Else
             TextBoxAdults.Text = Val(TextBoxAdults.Text) - 1
         End If
@@ -78,6 +86,7 @@
     End Sub
 
     Private Sub ButtonMinusChild_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonMinusChild.Click
+        ' Explanation the same as above
         If Val(TextBoxChildren.Text) = 0 Then
             TextBoxChildren.Text = Val(TextBoxChildren.Text)
         Else
@@ -88,6 +97,8 @@
 
     Private Sub sleeps_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles sleeps.TextChanged
         TextBoxSubTotal.Text = Val(roomRate.Text) * Val(periodTextBox.Text)
+        ' I have added the code below as while I was testing my app I relised that on changing the room from a 5 sleep to a 3 sleep
+        ' for example it would not change the adult and children text boxes, I therefore reset them to zero
         Dim total As Integer
         total = Val(TextBoxAdults.Text) + Val(TextBoxChildren.Text)
         If total > Val(sleeps.Text) Then
@@ -98,12 +109,20 @@
     End Sub
 
     Private Sub periodTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles periodTextBox.TextChanged
+        ' when using the datetimepicker the total days(period) changes and as that changes the subtotal changes as well
         TextBoxSubTotal.Text = Val(roomRate.Text) * Val(periodTextBox.Text)
 
     End Sub
 
     Private Sub TextBoxSubTotal_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBoxSubTotal.TextChanged
-        TextBoxDeposit.Text = Val(TextBoxSubTotal.Text / 2)
+        Try
+            TextBoxDeposit.Text = Val(TextBoxSubTotal.Text / 2)
+        Catch ex As Exception
+            ' I have only put this messagebox in for the purpose of the excersise. I would not do it this way normally.
+            ' I would use the nested if statement below within the loop.
+            MsgBox("Can not devide if field is empty!!", , "Devide by zero Error!")
+        End Try
+
         TextBoxBalance.Text = Val(TextBoxSubTotal.Text) - Val(TextBoxDeposit.Text)
 
     End Sub
@@ -125,8 +144,10 @@
         Else
             ' Add one to the transaction number
             GlobalVar.transaction = GlobalVar.transaction + 1
-            ' Saving the information to Global Variables to be extracted for reporting later.
-
+            ' Saving the information to Global Variables to be extracted for reporting later and to check if room booked or empty.
+            ' Need to establis first which room was selected
+            ' Still working on this selection
+            
 
 
             ' Clear all the fields for the next entries, this is a shortcut to clear all textboxes but I did not
@@ -134,11 +155,14 @@
             ' included the nested if for the textboxsubtotal that it does nothing on that
             For Each ctrl As Control In Me.Controls
                 If TypeOf ctrl Is TextBox Then
-                    If ctrl Is TextBoxSubTotal Then
+                    ' When This is added my Try and Catch would not execute.
+                    'If ctrl Is TextBoxSubTotal Then
 
-                    Else
-                        CType(ctrl, TextBox).Text = String.Empty
-                    End If
+                    'Else
+                    'CType(ctrl, TextBox).Text = String.Empty
+                    'End If
+                    ' if the above nested if statement is included and not commented I would exclude and comment this line
+                    CType(ctrl, TextBox).Text = String.Empty
                 End If
             Next ctrl
 
@@ -148,6 +172,12 @@
             ' Close window once completed
             Me.Close()
         End If
+
+    End Sub
+
+    Private Sub checkInDateTimePicker_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles checkInDateTimePicker.ValueChanged
+        ' I found this nice and short piece of code to prevent the user picking a date before todays date.
+        checkInDateTimePicker.MinDate = Now
 
     End Sub
 End Class

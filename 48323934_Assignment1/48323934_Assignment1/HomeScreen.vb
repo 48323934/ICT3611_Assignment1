@@ -13,6 +13,7 @@
     Public transaction As Integer = 1001
 
     ' Global variables for reporting on rooms and to check if room is occupied
+    ' This will still change busy working on an alternative.
     Public Room101() As String
     Public Room102() As String
     Public Room103() As String
@@ -44,21 +45,7 @@ Public Class HomeScreen
     Private Sub ReserveToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ReserveToolStripMenuItem.Click
         ' Opens the reservation window and sets focus on input field
         Reservation.ShowDialog()
-        Reservation.Focus()
-
-    End Sub
-
-    Private Sub checkinToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles checkinToolStripMenuItem.Click
-        ' Opens the CheckIn window and sets focus on input field
-        CheckIn.ShowDialog()
-        CheckIn.Focus()
-
-    End Sub
-
-    Private Sub checkoutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles checkoutToolStripMenuItem.Click
-        ' Opens the CheckOut window and sets focus on input field
-        CheckOut.ShowDialog()
-        CheckOut.Focus()
+        Reservation.textBoxGuestName.Focus()
 
     End Sub
 
@@ -86,20 +73,6 @@ Public Class HomeScreen
 
     Private Sub ToolStripButton4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton4.Click
         Me.Close()
-
-    End Sub
-
-    Private Sub ToolStripButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton3.Click
-        ' Opens the CheckOut window and sets focus on input field
-        CheckOut.ShowDialog()
-        CheckOut.Focus()
-
-    End Sub
-
-    Private Sub ToolStripButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton2.Click
-        ' Opens the CheckIn window and sets focus on input field
-        CheckIn.ShowDialog()
-        CheckIn.Focus()
 
     End Sub
 

@@ -72,7 +72,7 @@ Partial Class Reservation
         Me.Label11.Location = New System.Drawing.Point(30, 22)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(175, 24)
-        Me.Label11.TabIndex = 1
+        Me.Label11.TabIndex = 33
         Me.Label11.Text = "Reservation Form"
         '
         'ShapeContainer1
@@ -82,7 +82,7 @@ Partial Class Reservation
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape2, Me.LineShape1})
         Me.ShapeContainer1.Size = New System.Drawing.Size(590, 568)
-        Me.ShapeContainer1.TabIndex = 0
+        Me.ShapeContainer1.TabIndex = 32
         Me.ShapeContainer1.TabStop = False
         '
         'LineShape2
@@ -108,7 +108,7 @@ Partial Class Reservation
         Me.Label1.Location = New System.Drawing.Point(30, 80)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(100, 16)
-        Me.Label1.TabIndex = 2
+        Me.Label1.TabIndex = 34
         Me.Label1.Text = "Transaction no:"
         '
         'Label2
@@ -118,7 +118,7 @@ Partial Class Reservation
         Me.Label2.Location = New System.Drawing.Point(30, 130)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(86, 16)
-        Me.Label2.TabIndex = 4
+        Me.Label2.TabIndex = 0
         Me.Label2.Text = "Guest Name:"
         '
         'Label3
@@ -128,7 +128,7 @@ Partial Class Reservation
         Me.Label3.Location = New System.Drawing.Point(300, 130)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(107, 16)
-        Me.Label3.TabIndex = 6
+        Me.Label3.TabIndex = 2
         Me.Label3.Text = "Contact Number:"
         '
         'Label4
@@ -138,7 +138,7 @@ Partial Class Reservation
         Me.Label4.Location = New System.Drawing.Point(30, 230)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(86, 16)
-        Me.Label4.TabIndex = 8
+        Me.Label4.TabIndex = 11
         Me.Label4.Text = "No. of Adults:"
         '
         'Label5
@@ -148,7 +148,7 @@ Partial Class Reservation
         Me.Label5.Location = New System.Drawing.Point(300, 230)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(98, 16)
-        Me.Label5.TabIndex = 12
+        Me.Label5.TabIndex = 15
         Me.Label5.Text = "No. of Children:"
         '
         'Label6
@@ -158,7 +158,7 @@ Partial Class Reservation
         Me.Label6.Location = New System.Drawing.Point(30, 180)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(99, 16)
-        Me.Label6.TabIndex = 16
+        Me.Label6.TabIndex = 4
         Me.Label6.Text = "Room Number:"
         '
         'Label7
@@ -168,7 +168,7 @@ Partial Class Reservation
         Me.Label7.Location = New System.Drawing.Point(30, 280)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(94, 16)
-        Me.Label7.TabIndex = 21
+        Me.Label7.TabIndex = 19
         Me.Label7.Text = "Check In Date:"
         '
         'Label8
@@ -178,7 +178,7 @@ Partial Class Reservation
         Me.Label8.Location = New System.Drawing.Point(300, 280)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(104, 16)
-        Me.Label8.TabIndex = 23
+        Me.Label8.TabIndex = 21
         Me.Label8.Text = "Check Out Date:"
         '
         'Label9
@@ -188,7 +188,7 @@ Partial Class Reservation
         Me.Label9.Location = New System.Drawing.Point(30, 330)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(81, 16)
-        Me.Label9.TabIndex = 25
+        Me.Label9.TabIndex = 23
         Me.Label9.Text = "No. of Days:"
         '
         'Label10
@@ -198,7 +198,7 @@ Partial Class Reservation
         Me.Label10.Location = New System.Drawing.Point(30, 490)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(89, 16)
-        Me.Label10.TabIndex = 31
+        Me.Label10.TabIndex = 29
         Me.Label10.Text = "Balance Due:"
         '
         'labelTransaction
@@ -208,7 +208,7 @@ Partial Class Reservation
         Me.labelTransaction.Location = New System.Drawing.Point(150, 80)
         Me.labelTransaction.Name = "labelTransaction"
         Me.labelTransaction.Size = New System.Drawing.Size(79, 16)
-        Me.labelTransaction.TabIndex = 3
+        Me.labelTransaction.TabIndex = 35
         Me.labelTransaction.Text = "Transaction"
         '
         'transactionNo
@@ -218,7 +218,7 @@ Partial Class Reservation
         Me.transactionNo.Location = New System.Drawing.Point(30, 390)
         Me.transactionNo.Name = "transactionNo"
         Me.transactionNo.Size = New System.Drawing.Size(69, 16)
-        Me.transactionNo.TabIndex = 27
+        Me.transactionNo.TabIndex = 25
         Me.transactionNo.Text = "Sub Total:"
         '
         'Label12
@@ -228,7 +228,7 @@ Partial Class Reservation
         Me.Label12.Location = New System.Drawing.Point(30, 440)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(86, 16)
-        Me.Label12.TabIndex = 29
+        Me.Label12.TabIndex = 27
         Me.Label12.Text = "Deposit Due:"
         '
         'PictureBox1
@@ -247,7 +247,7 @@ Partial Class Reservation
         Me.MaskedTextBoxContact.Mask = "000-000-0000"
         Me.MaskedTextBoxContact.Name = "MaskedTextBoxContact"
         Me.MaskedTextBoxContact.Size = New System.Drawing.Size(120, 22)
-        Me.MaskedTextBoxContact.TabIndex = 7
+        Me.MaskedTextBoxContact.TabIndex = 3
         Me.MaskedTextBoxContact.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'textBoxGuestName
@@ -256,7 +256,7 @@ Partial Class Reservation
         Me.textBoxGuestName.Location = New System.Drawing.Point(150, 127)
         Me.textBoxGuestName.Name = "textBoxGuestName"
         Me.textBoxGuestName.Size = New System.Drawing.Size(145, 22)
-        Me.textBoxGuestName.TabIndex = 5
+        Me.textBoxGuestName.TabIndex = 1
         '
         'TextBoxAdults
         '
@@ -265,7 +265,8 @@ Partial Class Reservation
         Me.TextBoxAdults.Name = "TextBoxAdults"
         Me.TextBoxAdults.ReadOnly = True
         Me.TextBoxAdults.Size = New System.Drawing.Size(35, 22)
-        Me.TextBoxAdults.TabIndex = 9
+        Me.TextBoxAdults.TabIndex = 12
+        Me.TextBoxAdults.TabStop = False
         '
         'TextBoxSubTotal
         '
@@ -274,7 +275,8 @@ Partial Class Reservation
         Me.TextBoxSubTotal.Name = "TextBoxSubTotal"
         Me.TextBoxSubTotal.ReadOnly = True
         Me.TextBoxSubTotal.Size = New System.Drawing.Size(79, 22)
-        Me.TextBoxSubTotal.TabIndex = 28
+        Me.TextBoxSubTotal.TabIndex = 26
+        Me.TextBoxSubTotal.TabStop = False
         '
         'TextBoxChildren
         '
@@ -283,7 +285,8 @@ Partial Class Reservation
         Me.TextBoxChildren.Name = "TextBoxChildren"
         Me.TextBoxChildren.ReadOnly = True
         Me.TextBoxChildren.Size = New System.Drawing.Size(35, 22)
-        Me.TextBoxChildren.TabIndex = 13
+        Me.TextBoxChildren.TabIndex = 16
+        Me.TextBoxChildren.TabStop = False
         '
         'roomNumber
         '
@@ -292,7 +295,8 @@ Partial Class Reservation
         Me.roomNumber.Name = "roomNumber"
         Me.roomNumber.ReadOnly = True
         Me.roomNumber.Size = New System.Drawing.Size(79, 22)
-        Me.roomNumber.TabIndex = 17
+        Me.roomNumber.TabIndex = 5
+        Me.roomNumber.TabStop = False
         '
         'periodTextBox
         '
@@ -301,7 +305,8 @@ Partial Class Reservation
         Me.periodTextBox.Name = "periodTextBox"
         Me.periodTextBox.ReadOnly = True
         Me.periodTextBox.Size = New System.Drawing.Size(35, 22)
-        Me.periodTextBox.TabIndex = 26
+        Me.periodTextBox.TabIndex = 24
+        Me.periodTextBox.TabStop = False
         '
         'TextBoxDeposit
         '
@@ -310,7 +315,8 @@ Partial Class Reservation
         Me.TextBoxDeposit.Name = "TextBoxDeposit"
         Me.TextBoxDeposit.ReadOnly = True
         Me.TextBoxDeposit.Size = New System.Drawing.Size(79, 22)
-        Me.TextBoxDeposit.TabIndex = 30
+        Me.TextBoxDeposit.TabIndex = 28
+        Me.TextBoxDeposit.TabStop = False
         '
         'TextBoxBalance
         '
@@ -319,21 +325,22 @@ Partial Class Reservation
         Me.TextBoxBalance.Name = "TextBoxBalance"
         Me.TextBoxBalance.ReadOnly = True
         Me.TextBoxBalance.Size = New System.Drawing.Size(79, 22)
-        Me.TextBoxBalance.TabIndex = 32
+        Me.TextBoxBalance.TabIndex = 30
+        Me.TextBoxBalance.TabStop = False
         '
         'checkInDateTimePicker
         '
         Me.checkInDateTimePicker.Location = New System.Drawing.Point(150, 277)
         Me.checkInDateTimePicker.Name = "checkInDateTimePicker"
         Me.checkInDateTimePicker.Size = New System.Drawing.Size(130, 20)
-        Me.checkInDateTimePicker.TabIndex = 22
+        Me.checkInDateTimePicker.TabIndex = 20
         '
         'checkOutDateTimePicker
         '
         Me.checkOutDateTimePicker.Location = New System.Drawing.Point(430, 277)
         Me.checkOutDateTimePicker.Name = "checkOutDateTimePicker"
         Me.checkOutDateTimePicker.Size = New System.Drawing.Size(130, 20)
-        Me.checkOutDateTimePicker.TabIndex = 24
+        Me.checkOutDateTimePicker.TabIndex = 22
         Me.checkOutDateTimePicker.Value = New Date(2013, 2, 20, 15, 34, 5, 0)
         '
         'Label13
@@ -343,7 +350,7 @@ Partial Class Reservation
         Me.Label13.Location = New System.Drawing.Point(276, 180)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(77, 16)
-        Me.Label13.TabIndex = 19
+        Me.Label13.TabIndex = 7
         Me.Label13.Text = "RoomRate:"
         '
         'roomRate
@@ -353,14 +360,15 @@ Partial Class Reservation
         Me.roomRate.Name = "roomRate"
         Me.roomRate.ReadOnly = True
         Me.roomRate.Size = New System.Drawing.Size(65, 22)
-        Me.roomRate.TabIndex = 20
+        Me.roomRate.TabIndex = 8
+        Me.roomRate.TabStop = False
         '
         'ButtonMinusAdult
         '
         Me.ButtonMinusAdult.Location = New System.Drawing.Point(204, 227)
         Me.ButtonMinusAdult.Name = "ButtonMinusAdult"
         Me.ButtonMinusAdult.Size = New System.Drawing.Size(25, 25)
-        Me.ButtonMinusAdult.TabIndex = 10
+        Me.ButtonMinusAdult.TabIndex = 13
         Me.ButtonMinusAdult.Text = "<"
         Me.ButtonMinusAdult.UseVisualStyleBackColor = True
         '
@@ -369,7 +377,7 @@ Partial Class Reservation
         Me.ButtonMinusChild.Location = New System.Drawing.Point(484, 227)
         Me.ButtonMinusChild.Name = "ButtonMinusChild"
         Me.ButtonMinusChild.Size = New System.Drawing.Size(25, 25)
-        Me.ButtonMinusChild.TabIndex = 14
+        Me.ButtonMinusChild.TabIndex = 17
         Me.ButtonMinusChild.Text = "<"
         Me.ButtonMinusChild.UseVisualStyleBackColor = True
         '
@@ -378,7 +386,7 @@ Partial Class Reservation
         Me.ButtonPlusAdult.Location = New System.Drawing.Point(235, 227)
         Me.ButtonPlusAdult.Name = "ButtonPlusAdult"
         Me.ButtonPlusAdult.Size = New System.Drawing.Size(25, 25)
-        Me.ButtonPlusAdult.TabIndex = 11
+        Me.ButtonPlusAdult.TabIndex = 14
         Me.ButtonPlusAdult.Text = ">"
         Me.ButtonPlusAdult.UseVisualStyleBackColor = True
         '
@@ -387,7 +395,7 @@ Partial Class Reservation
         Me.ButtonPlusChild.Location = New System.Drawing.Point(515, 227)
         Me.ButtonPlusChild.Name = "ButtonPlusChild"
         Me.ButtonPlusChild.Size = New System.Drawing.Size(25, 25)
-        Me.ButtonPlusChild.TabIndex = 15
+        Me.ButtonPlusChild.TabIndex = 18
         Me.ButtonPlusChild.Text = ">"
         Me.ButtonPlusChild.UseVisualStyleBackColor = True
         '
@@ -396,7 +404,7 @@ Partial Class Reservation
         Me.Button5.Location = New System.Drawing.Point(235, 174)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(25, 25)
-        Me.Button5.TabIndex = 18
+        Me.Button5.TabIndex = 6
         Me.Button5.Text = "..."
         Me.Button5.UseVisualStyleBackColor = True
         '
@@ -407,7 +415,7 @@ Partial Class Reservation
         Me.Label14.Location = New System.Drawing.Point(450, 180)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(54, 16)
-        Me.Label14.TabIndex = 33
+        Me.Label14.TabIndex = 9
         Me.Label14.Text = "Sleeps:"
         '
         'sleeps
@@ -417,7 +425,8 @@ Partial Class Reservation
         Me.sleeps.Name = "sleeps"
         Me.sleeps.ReadOnly = True
         Me.sleeps.Size = New System.Drawing.Size(35, 22)
-        Me.sleeps.TabIndex = 34
+        Me.sleeps.TabIndex = 10
+        Me.sleeps.TabStop = False
         '
         'ButtonSubmitReserve
         '
@@ -425,12 +434,13 @@ Partial Class Reservation
         Me.ButtonSubmitReserve.Location = New System.Drawing.Point(70, 535)
         Me.ButtonSubmitReserve.Name = "ButtonSubmitReserve"
         Me.ButtonSubmitReserve.Size = New System.Drawing.Size(126, 23)
-        Me.ButtonSubmitReserve.TabIndex = 35
-        Me.ButtonSubmitReserve.Text = "Make Reservation"
+        Me.ButtonSubmitReserve.TabIndex = 31
+        Me.ButtonSubmitReserve.Text = "Make &Reservation"
         Me.ButtonSubmitReserve.UseVisualStyleBackColor = True
         '
         'Reservation
         '
+        Me.AcceptButton = Me.ButtonSubmitReserve
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption

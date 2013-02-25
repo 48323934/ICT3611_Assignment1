@@ -27,15 +27,11 @@ Partial Class HomeScreen
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReserveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.checkinToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.checkoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GuestToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RoomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CheckedInToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CheckedOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RoomsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReservationsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -46,8 +42,6 @@ Partial Class HomeScreen
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
@@ -66,7 +60,7 @@ Partial Class HomeScreen
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReserveToolStripMenuItem, Me.checkinToolStripMenuItem, Me.checkoutToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReserveToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
@@ -79,20 +73,6 @@ Partial Class HomeScreen
         Me.ReserveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.R), System.Windows.Forms.Keys)
         Me.ReserveToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
         Me.ReserveToolStripMenuItem.Text = "Reservation"
-        '
-        'checkinToolStripMenuItem
-        '
-        Me.checkinToolStripMenuItem.Name = "checkinToolStripMenuItem"
-        Me.checkinToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.I), System.Windows.Forms.Keys)
-        Me.checkinToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.checkinToolStripMenuItem.Text = "Check-in"
-        '
-        'checkoutToolStripMenuItem
-        '
-        Me.checkoutToolStripMenuItem.Name = "checkoutToolStripMenuItem"
-        Me.checkoutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.checkoutToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.checkoutToolStripMenuItem.Text = "Check-out"
         '
         'ExitToolStripMenuItem
         '
@@ -125,33 +105,21 @@ Partial Class HomeScreen
         '
         'ReportsToolStripMenuItem
         '
-        Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CheckedInToolStripMenuItem, Me.CheckedOutToolStripMenuItem, Me.RoomsToolStripMenuItem, Me.ReservationsToolStripMenuItem})
+        Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RoomsToolStripMenuItem, Me.ReservationsToolStripMenuItem})
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
         Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 21)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
-        'CheckedInToolStripMenuItem
-        '
-        Me.CheckedInToolStripMenuItem.Name = "CheckedInToolStripMenuItem"
-        Me.CheckedInToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
-        Me.CheckedInToolStripMenuItem.Text = "Checked In"
-        '
-        'CheckedOutToolStripMenuItem
-        '
-        Me.CheckedOutToolStripMenuItem.Name = "CheckedOutToolStripMenuItem"
-        Me.CheckedOutToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
-        Me.CheckedOutToolStripMenuItem.Text = "Checked Out"
-        '
         'RoomsToolStripMenuItem
         '
         Me.RoomsToolStripMenuItem.Name = "RoomsToolStripMenuItem"
-        Me.RoomsToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.RoomsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.RoomsToolStripMenuItem.Text = "Rooms"
         '
         'ReservationsToolStripMenuItem
         '
         Me.ReservationsToolStripMenuItem.Name = "ReservationsToolStripMenuItem"
-        Me.ReservationsToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.ReservationsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ReservationsToolStripMenuItem.Text = "Reservations"
         '
         'HelpToolStripMenuItem
@@ -204,7 +172,7 @@ Partial Class HomeScreen
         '
         Me.ToolStrip1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton4})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton4})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 25)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(1086, 56)
@@ -222,28 +190,6 @@ Partial Class HomeScreen
         Me.ToolStripButton1.Name = "ToolStripButton1"
         Me.ToolStripButton1.Size = New System.Drawing.Size(64, 53)
         Me.ToolStripButton1.Text = "Reservations"
-        '
-        'ToolStripButton2
-        '
-        Me.ToolStripButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), System.Drawing.Image)
-        Me.ToolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(64, 53)
-        Me.ToolStripButton2.Text = "Check In"
-        '
-        'ToolStripButton3
-        '
-        Me.ToolStripButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ToolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton3.Image = CType(resources.GetObject("ToolStripButton3.Image"), System.Drawing.Image)
-        Me.ToolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(64, 53)
-        Me.ToolStripButton3.Text = "Check Out"
         '
         'ToolStripButton4
         '
@@ -287,8 +233,6 @@ Partial Class HomeScreen
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReserveToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents checkinToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents checkoutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EditToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GuestToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RoomToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -298,15 +242,11 @@ Partial Class HomeScreen
     Friend WithEvents ClockTimer1 As System.Windows.Forms.Timer
     Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReportsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CheckedInToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CheckedOutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RoomsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReservationsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripButton2 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripButton3 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton4 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
 
