@@ -11,6 +11,8 @@
         ' Set focus to Guest Name
         textBoxGuestName.Focus()
 
+        ' period textbox will always start as 1
+        periodTextBox.Text = "1"
 
         ' I have added this feature to update where you are in the statusbar.
         HomeScreen.ToolStripStatusLabel1.Text = "Guest making a Reservation"
@@ -27,7 +29,13 @@
     End Sub
 
     Private Sub checkOutDateTimePicker_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles checkOutDateTimePicker.ValueChanged
+        ' set period as a timespan variable
         Dim period As TimeSpan = checkOutDateTimePicker.Value - checkInDateTimePicker.Value
+
+        ' First assertion test
+        Debug.Assert(period.Days <= 0, "period.days can not be zero")
+        Trace.Assert(period.Days <= 0, "period.days can not be zero")
+
         ' test.Text = period.Days       ' with this test code I realised I had to add the +1 to the period.Days
         ' I have set this conditional statement to ensure you can not pick a date before today and if you do will change it automatically
         If period.Days < 1 Then
@@ -57,7 +65,17 @@
 
             ' if it is not then add 1
         Else
-            TextBoxAdults.Text = Val(TextBoxAdults.Text) + 1
+            ' I am using this Try Catch to fix the problem and this time without a msgbox notification.
+            ' I found the error during testing to be that if the textbox is blank it gives an error, therefore in the catch allocating
+            ' a value of zero to the textbox before running the function. This could of been prevented by defensive programming
+            ' by adding the value to the textbox on load but this is done for purpose of the excersise.
+            Try
+                TextBoxAdults.Text = addGuest(TextBoxAdults.Text)
+            Catch ex As Exception
+                TextBoxAdults.Text = 0
+                TextBoxAdults.Text = addGuest(TextBoxAdults.Text)
+            End Try
+
         End If
 
     End Sub
@@ -69,6 +87,8 @@
         If total = Val(sleeps.Text) Then
 
         Else
+            ' Above I made use of the addGuest Function, I could of done it here as well but wanted to show the alternate
+            ' method which would of been fine for this small program but the function is much better for bigger more complicated progs.
             TextBoxChildren.Text = Val(TextBoxChildren.Text) + 1
         End If
 
@@ -80,7 +100,7 @@
             TextBoxAdults.Text = Val(TextBoxAdults.Text)
             ' if it is not zero it could deduct without going into a negative amount
         Else
-            TextBoxAdults.Text = Val(TextBoxAdults.Text) - 1
+            TextBoxAdults.Text = subtractGuest(TextBoxAdults.Text)
         End If
 
     End Sub
@@ -90,7 +110,7 @@
         If Val(TextBoxChildren.Text) = 0 Then
             TextBoxChildren.Text = Val(TextBoxChildren.Text)
         Else
-            TextBoxChildren.Text = Val(TextBoxChildren.Text) - 1
+            TextBoxChildren.Text = subtractGuest(TextBoxChildren.Text)
         End If
 
     End Sub
@@ -115,12 +135,21 @@
     End Sub
 
     Private Sub TextBoxSubTotal_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBoxSubTotal.TextChanged
+        Dim Retries As Short = 0
+
         Try
             TextBoxDeposit.Text = Val(TextBoxSubTotal.Text / 2)
         Catch ex As Exception
+            Retries += 1
             ' I have only put this messagebox in for the purpose of the excersise. I would not do it this way normally.
             ' I would use the nested if statement below within the loop.
-            MsgBox("Can not devide if field is empty!!", , "Devide by zero Error!")
+            If Retries <= 2 Then
+                MsgBox("Field Error for excersise purpose only!!", , "Devide by zero Error!")
+            Else
+                MsgBox("Subtotal textbox has been reset", , "Error!")
+
+            End If
+
         End Try
 
         TextBoxBalance.Text = Val(TextBoxSubTotal.Text) - Val(TextBoxDeposit.Text)
@@ -128,6 +157,12 @@
     End Sub
 
     Private Sub ButtonSubmitReserve_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonSubmitReserve.Click
+        ' Second assertion test
+        Debug.Assert(textBoxGuestName.Text <> "", "can not be empty")
+
+        ' Third assertion test
+        Debug.Assert(MaskedTextBoxContact.Text <> "", "can not be empty")
+
         ' Variables to be used in if statement
         Dim removedDash As String = MaskedTextBoxContact.Text.Replace("-", "")
         Dim adultVal As Integer = Val(TextBoxAdults.Text)
@@ -144,11 +179,6 @@
         Else
             ' Add one to the transaction number
             GlobalVar.transaction = GlobalVar.transaction + 1
-            ' Saving the information to Global Variables to be extracted for reporting later and to check if room booked or empty.
-            ' Need to establis first which room was selected
-            ' Still working on this selection
-            
-
 
             ' Clear all the fields for the next entries, this is a shortcut to clear all textboxes but I did not
             ' want to clear the textboxsubtotal as a textchange is linked to it and it will give an error so I
@@ -167,7 +197,8 @@
             Next ctrl
 
             ' Clear the maskedtextbox seperately
-            MaskedTextBoxContact.Text = String.Empty
+            Me.MaskedTextBoxContact.Text = String.Empty
+            
 
             ' Close window once completed
             Me.Close()

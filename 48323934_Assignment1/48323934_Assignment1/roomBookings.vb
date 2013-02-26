@@ -20,31 +20,31 @@
         Button5.Text = GlobalVar.Rooms(4, 2)
 
         ' Check if rooms are available or occupied by checking if the room arrays are empty with conditional statements below
-        If GlobalVar.Room101 Is Nothing Then
+        If GlobalVar.Room101 = False Then
             Me.Button1.Enabled = True
         Else
             Me.Button1.Enabled = False
         End If
 
-        If GlobalVar.Room102 Is Nothing Then
+        If GlobalVar.Room102 = False Then
             Me.Button2.Enabled = True
         Else
             Me.Button2.Enabled = False
         End If
 
-        If GlobalVar.Room103 Is Nothing Then
+        If GlobalVar.Room103 = False Then
             Me.Button3.Enabled = True
         Else
             Me.Button3.Enabled = False
         End If
 
-        If GlobalVar.Room104 Is Nothing Then
+        If GlobalVar.Room104 = False Then
             Me.Button4.Enabled = True
         Else
             Me.Button4.Enabled = False
         End If
 
-        If GlobalVar.Room105 Is Nothing Then
+        If GlobalVar.Room105 = False Then
             Me.Button5.Enabled = True
         Else
             Me.Button5.Enabled = False
@@ -57,6 +57,7 @@
         Reservation.roomNumber.Text = Button1.Text
         Reservation.roomRate.Text = TextBox6.Text
         Reservation.sleeps.Text = TextBox1.Text
+
         ' Once clicked it also closes the current roomBookings window
         Me.Close()
 
