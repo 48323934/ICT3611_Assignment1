@@ -33,8 +33,8 @@
         Dim period As TimeSpan = checkOutDateTimePicker.Value - checkInDateTimePicker.Value
 
         ' First assertion test
-        Debug.Assert(period.Days <= 0, "period.days can not be zero")
-        Trace.Assert(period.Days <= 0, "period.days can not be zero")
+        'Debug.Assert(period.Days <> "", "period.days can not be zero")
+        'Trace.Assert(period.Days <= 1, "period.days can not be zero")
 
         ' test.Text = period.Days       ' with this test code I realised I had to add the +1 to the period.Days
         ' I have set this conditional statement to ensure you can not pick a date before today and if you do will change it automatically
@@ -143,10 +143,10 @@
             Retries += 1
             ' I have only put this messagebox in for the purpose of the excersise. I would not do it this way normally.
             ' I would use the nested if statement below within the loop.
-            If Retries <= 2 Then
+            If Retries >= 2 Then
                 MsgBox("Field Error for excersise purpose only!!", , "Devide by zero Error!")
             Else
-                MsgBox("Subtotal textbox has been reset", , "Error!")
+                MsgBox("Your Reservation has been placed.", , "Reservations")
 
             End If
 
@@ -162,6 +162,20 @@
 
         ' Third assertion test
         Debug.Assert(MaskedTextBoxContact.Text <> "", "can not be empty")
+
+        ' Create the booked rooms
+        If roomNumber.Text = "Room 101" Then
+            GlobalVar.Room101 = True
+        ElseIf roomNumber.Text = "Room 102" Then
+            GlobalVar.Room102 = True
+        ElseIf roomNumber.Text = "Room 103" Then
+            GlobalVar.Room103 = True
+        ElseIf roomNumber.Text = "Room 104" Then
+            GlobalVar.Room104 = True
+        ElseIf roomNumber.Text = "Room 105" Then
+            GlobalVar.Room105 = True
+
+        End If
 
         ' Variables to be used in if statement
         Dim removedDash As String = MaskedTextBoxContact.Text.Replace("-", "")
@@ -198,7 +212,7 @@
 
             ' Clear the maskedtextbox seperately
             Me.MaskedTextBoxContact.Text = String.Empty
-            
+
 
             ' Close window once completed
             Me.Close()

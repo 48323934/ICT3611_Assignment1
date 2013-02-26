@@ -50,6 +50,12 @@
             Me.Button5.Enabled = False
         End If
 
+        If GlobalVar.Room101 = True AndAlso GlobalVar.Room102 = True AndAlso GlobalVar.Room103 = True _
+            AndAlso GlobalVar.Room104 = True AndAlso GlobalVar.Room105 = True Then
+            MsgBox("All rooms are occupied", , "Reservations")
+            Me.Close()
+
+        End If
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click

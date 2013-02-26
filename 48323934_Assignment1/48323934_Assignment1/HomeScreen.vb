@@ -35,16 +35,6 @@
 
     End Sub
 
-    Private Sub GuestToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GuestToolStripMenuItem.Click
-        NoNeed.ShowDialog()
-
-    End Sub
-
-    Private Sub RoomToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RoomToolStripMenuItem.Click
-        NoNeed.ShowDialog()
-
-    End Sub
-
     Private Sub ToolStripButton4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton4.Click
         Me.Close()
 
@@ -53,7 +43,6 @@
     Private Sub ToolStripButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton1.Click
         ' Opens the reservation window and sets focus on input field
         Reservation.ShowDialog()
-        Reservation.Focus()
 
     End Sub
 

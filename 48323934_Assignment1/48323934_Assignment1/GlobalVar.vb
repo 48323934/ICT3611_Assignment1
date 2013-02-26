@@ -15,10 +15,10 @@
 
     ' Global variables for reporting on rooms and to check if room is occupied
     Public Room101 As Boolean = False
-    Public Room102 As Boolean
-    Public Room103 As Boolean
-    Public Room104 As Boolean
-    Public Room105 As Boolean
+    Public Room102 As Boolean = False
+    Public Room103 As Boolean = False
+    Public Room104 As Boolean = False
+    Public Room105 As Boolean = False
 
     '''''''' My Functions '''''''' Simple but functional
     ' Unpractical for this exercise but if this had to expand to a full blown program this could save a lot of coding

@@ -87,12 +87,6 @@
     <Compile Include="roomBookings.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NoNeed.Designer.vb">
-      <DependentUpon>NoNeed.vb</DependentUpon>
-    </Compile>
-    <Compile Include="NoNeed.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Reservation.Designer.vb">
       <DependentUpon>Reservation.vb</DependentUpon>
     </Compile>
@@ -134,9 +128,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="roomBookings.resx">
       <DependentUpon>roomBookings.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NoNeed.resx">
-      <DependentUpon>NoNeed.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.vb</DependentUpon>
